@@ -2,7 +2,7 @@ package at.mihai.games.firstgame;
 
 import org.newdawn.slick.Graphics;
 
-public class Circle {
+public class Circle implements Actor{
 
     private float x,y;
     private float speed;

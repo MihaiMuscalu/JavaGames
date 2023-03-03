@@ -5,7 +5,7 @@ import org.newdawn.slick.tests.GraphicsTest;
 
 import java.awt.*;
 
-public class Rectangle {
+public class Rectangle implements Actor{
     private enum DIRECTION {RIGHT, DOWN, LEFT, UP};
 
     private float speed;
