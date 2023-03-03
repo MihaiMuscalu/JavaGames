@@ -22,26 +22,15 @@ public class Rectangle {
 
     public void render(Graphics graphics)
     {
-       graphics.drawRect(this.x,this.y,100,100);
+       graphics.drawRect(this.x,this.y,5,5);
     }
 
     public void update(int delta) {
-        if(this.y <= 100)
-        {
-            this.x +=(float)delta/speed;
-        }
-        if(this.x >= 600)
-        {
-            this.y +=(float)delta/speed;
-        }
-        if(this.y >= 400)
-        {
-            this.x -=(float)delta/speed;
-        }
-        if(this.x <= 100 && this.y > 100)
-        {
-            this.y -=(float)delta/speed;
-        }
+        this.x += (double) delta / speed;
 
+        if(this.x > 800)
+        {
+            this.x = 10;
         }
+    }
 }
